@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,700;1,400&display=swap");
+
+.app__header {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  background: url("../../assets/herobg-hand.png") no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  h1 {
+    font-size: 5rem;
+
+    span {
+      color: var(--secondary-color);
+    }
+
+    @media screen and (max-width: 1128px) {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .app__header-img {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    background: none;
+
+    .app__header-intro {
+      flex-direction: column;
+    }
+    .app__header-intro-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+    }
+
+    .app__header-img {
+      width: 500px;
+
+      img {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .app__header-img {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.p-greeting {
+  font-size: 1rem;
+}
+
+.occupation {
+  font-family: "Overlock", cursive;
+}
+
+.myButton {
+  margin-top: 1.5rem;
+  box-shadow: 4px 4px 0px #71d68f;
+  border-radius: 8px;
+
+  background: linear-gradient(to bottom, #91e3a9 5%, #8ed3a2 100%);
+  background-color: #ededed;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  color: #000;
+  font-family: var(--font-base);
+  font-size: 17px;
+  padding: 7px 25px;
+  border: none;
+
+  transition: transform 200ms, box-shadow 200ms;
+
+  &:hover {
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 0px 0px 0px #71d68f;
+  }
+  &:active {
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 0px 0px 0px #71d68f;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 10px 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+// .myButton:active {
+//   position: relative;
+//   top: 1px;
+// }
