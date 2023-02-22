@@ -39,6 +39,25 @@
   }
 }
 
+//
+.tags {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .tag {
+    height: fit-content;
+    background: #d6d2cceb;
+    border-radius: 3px;
+    padding: 0.3em;
+    color: #1b1917;
+    font-weight: 400;
+  }
+}
+
 .app__work-portfolio {
   display: flex;
   flex-wrap: wrap;

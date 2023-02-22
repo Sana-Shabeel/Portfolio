@@ -32,6 +32,7 @@ import herobg from "../assets/herobg-hand.png";
 import logo3 from "../assets/logo3.png";
 import anasLogo from "../assets/anas-logo-1.png";
 import anasLogo2 from "../assets/anas-logo2.svg";
+import signature from "../assets/signature-logo.png";
 // eslint-disable-next-line
 export default {
   email,
@@ -63,5 +64,6 @@ export default {
   herobg,
   logo3,
   anasLogo,
-  anasLogo2
+  anasLogo2,
+  signature,
 };
